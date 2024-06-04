@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+//        Buka fragment Login untuk pertama kali
         supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()
     }
 }

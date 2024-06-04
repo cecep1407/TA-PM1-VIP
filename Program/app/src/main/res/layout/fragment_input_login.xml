@@ -60,23 +60,23 @@
 
                 <Button
                     android:id="@+id/btn_signup"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20px"
                     android:backgroundTint="@android:color/transparent"
-                    android:text="SignUp"
-                    android:gravity="start"
+                    android:text="New User? SignUp Now"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
                 <Button
                     android:id="@+id/btn_login"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="20px"
                     android:backgroundTint="@color/background_content"
                     android:text="Login"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
