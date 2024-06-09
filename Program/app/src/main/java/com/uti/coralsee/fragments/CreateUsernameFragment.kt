@@ -48,7 +48,7 @@ class CreateUsernameFragment : Fragment() {
         val email = binding.inpEmail.text.toString()
         val username = binding.inpUsername.text.toString()
         val password = binding.inpPassword.text.toString()
-        val pengguna = Lite.Pengguna(nama,  username, password, email)
+        val pengguna = Lite.Pengguna(nama,email, username, password)
         val hasil = lite.insertPengguna(pengguna)
         if (hasil != -1L) {
             Toast.makeText(requireContext(), "Sign Up Berhasil, Silakan Login", Toast.LENGTH_SHORT).show()

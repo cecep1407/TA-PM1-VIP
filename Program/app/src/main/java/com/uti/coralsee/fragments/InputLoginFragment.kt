@@ -48,8 +48,8 @@ class InputLoginFragment : Fragment() {
 
 //        Buat Even Login
         binding.btnLogin.setOnClickListener {
-            val username = binding.inpLoginUsername.toString()
-            val pass = binding.inpLoginPassword.toString()
+            var username = binding.inpLoginUsername.text.toString()
+            val pass = binding.inpLoginPassword.text.toString()
             val loginSukses = lite.login(username, pass)
             if (loginSukses){
                 Toast.makeText(requireContext(), "Login Berhasil", Toast.LENGTH_SHORT).show()
