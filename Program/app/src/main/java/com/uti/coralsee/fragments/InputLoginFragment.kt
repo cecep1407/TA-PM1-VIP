@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.uti.coralsee.R
+import com.uti.coralsee.databinding.FragmentInputLoginBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,17 +37,16 @@ class InputLoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        Buat Variable view
-        val view = inflater.inflate(R.layout.fragment_input_login, container, false)
+//        Buat Variable Bindinf=g
+        val binding = FragmentInputLoginBinding.inflate(inflater, container, false)
 
-//        Deklarasi Komponen
-        val btn_signup: Button = view.findViewById(R.id.btn_SignUp)
+
 
 //          Buat Event
-        btn_signup.setOnClickListener {
+        binding.btnSignUp.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frm_containter_login, CreateUsernameFragment()).commit()
         }
-        return view
+        return binding.root
     }
 
     companion object {
