@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import com.uti.coralsee.R
+import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentInputLoginBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,10 +41,23 @@ class InputLoginFragment : Fragment() {
         // Inflate the layout for this fragment
 //        Buat Variable Bindinf=g
         val binding = FragmentInputLoginBinding.inflate(inflater, container, false)
+//        Panggilan class Lite
+        val lite = Lite(requireContext())
 
 
+//        Buat Even Login
+        binding.btnLogin.setOnClickListener {
+            val username = binding.inpLoginUsername.toString()
+            val pass = binding.inpLoginPassword.toString()
+            val loginSukses = lite.login(username, pass)
+            if (loginSukses){
+                Toast.makeText(requireContext(), "Login Berhasil", Toast.LENGTH_SHORT).show()
+            } else{
+                Toast.makeText(requireContext(), "Username/Password Salah", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-//          Buat Event
+//          Buat Event SignUp
         binding.btnSignUp.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frm_containter_login, CreateUsernameFragment()).commit()
         }

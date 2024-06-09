@@ -27,6 +27,7 @@
                 android:src="@drawable/coralsee__1_" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inp_Login_Username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20px">
@@ -44,6 +45,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inp_Login_Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20px">

@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.uti.coralsee.R
+import com.uti.coralsee.config.Lite
+import com.uti.coralsee.databinding.FragmentCreateUsernameBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +38,27 @@ class CreateUsernameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_username, container, false)
+//Deklarasi Binding
+        val binding = FragmentCreateUsernameBinding.inflate(inflater, container, false)
+//Panggil class Lite
+        val lite = Lite(requireContext())
+//        Event Button SignUp
+        binding.btnCreateUser.setOnClickListener(){
+        val nama = binding.inpName.text.toString()
+        val email = binding.inpEmail.text.toString()
+        val username = binding.inpUsername.text.toString()
+        val password = binding.inpPassword.text.toString()
+        val pengguna = Lite.Pengguna(nama,  username, password, email)
+        val hasil = lite.insertPengguna(pengguna)
+        if (hasil != -1L) {
+            Toast.makeText(requireContext(), "Sign Up Berhasil, Silakan Login", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(requireContext(), "Gagal memasukkan data", Toast.LENGTH_SHORT).show()
+        }
+        requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frm_containter_login, InputLoginFragment()).commit()
+    }
+
+        return binding.root
     }
 
     companion object {
