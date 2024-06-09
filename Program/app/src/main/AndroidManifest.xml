@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoralSee"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/rounded" />
 
         <activity
             android:name=".SplashScreenActivity"
