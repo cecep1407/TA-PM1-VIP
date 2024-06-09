@@ -1,14 +1,14 @@
 package com.uti.coralsee
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.Fragment
-import com.uti.coralsee.databinding.ActivityLoginBinding
-import com.uti.coralsee.fragments.CreateUsernameFragment
 import com.uti.coralsee.fragments.InputLoginFragment
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,4 +23,5 @@ class LoginActivity : AppCompatActivity() {
 
 //        Buka fragment Login untuk pertama kali
         supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()}}
+
 
