@@ -19,5 +19,6 @@ class LoginActivity : AppCompatActivity() {
         }
 //        Buka fragment Login untuk pertama kali
         supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()
+
     }
 }
