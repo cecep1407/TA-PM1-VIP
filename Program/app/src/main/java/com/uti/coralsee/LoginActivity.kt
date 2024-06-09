@@ -5,6 +5,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.uti.coralsee.databinding.ActivityLoginBinding
+import com.uti.coralsee.fragments.CreateUsernameFragment
 import com.uti.coralsee.fragments.InputLoginFragment
 
 class LoginActivity : AppCompatActivity() {
@@ -17,8 +20,7 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//        Buka fragment Login untuk pertama kali
-        supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()
 
-    }
-}
+//        Buka fragment Login untuk pertama kali
+        supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()}}
+
