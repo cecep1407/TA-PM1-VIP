@@ -74,7 +74,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Spesies dari genus -Acropora- menyukai lingkungan laut air hangat. Secara khusus, - Acropora cervicornis - merupakan salah satu karang pembentuk terumbu utama di Karibia (Birkeland 1997). Spesies ini juga terdapat di Great Barrier Reef Australia (McGregor 1974)."
+                android:text="Acropora microphthalma adalah spesies karang acroporid yang ditemukan di Laut Merah , Teluk Aden , Samudera Hindia barat daya dan utara, Indo-Pasifik tengah , Australia, Asia Tenggara, Jepang, Laut Cina Timur , dan samudera Pasifik barat dan tengah. Laut. Itu juga ditemukan di Kepulauan Line . Hal ini terjadi di terumbu tropis dangkal di lereng terumbu atas, di perairan keruh dan di laguna berpasir. Ia boleh dijumpai dari kedalaman 5–25 m."
                 android:textSize="14dp" />
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Acropora cervicornis suka hidup di perairan laut hangat yang dekat dengan permukaan. Wilayah lautan tropis bagian barat merupakan tempat dimana terdapat sebagian besar keanekaragaman organisme terumbu karang (Birkeland 1997). Polip pembentuk karang membutuhkan perairan tropis yang suhunya lebih dari 20 derajat celcius dan cukup cahaya. Mereka juga membutuhkan permukaan yang keras agar polip karang dapat menetap. Karang staghorn, seperti halnya karang lainnya, membutuhkan air yang sangat beroksigen dan mengandung persediaan hewan planktonik kecil yang cukup. Karang juga membutuhkan air yang jernih, karena selain mengurangi cahaya, hujan sedimen yang deras juga akan menutupi karang (McGregor 1974)"
+                android:text="Lereng terumbu bagian atas, juga air keruh dan laguna berpasir."
                 android:textSize="14dp" />
 
             <TextView
@@ -116,7 +116,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Karang-karang ini umumnya mempunyai tentakel dalam kelipatan tiga, yang merupakan ciri khas semua karang yang termasuk dalam subkelas Zoantharia, juga dikenal sebagai Hexacorallia (Encarta 1997). Pada malam hari, tentakel karang kecil seperti jari muncul. Mereka memompa dirinya sendiri dengan air dan muncul seperti bintang-bintang kecil di seluruh terumbu karang (Sargent 1991). Karang staghorn, - A. cervicornis -, tumbuh menjadi 'cabang seperti tanduk' sehingga polipnya menonjol di atas pasir (McGregor 1974). Karang staghorn memiliki nematocyst, yaitu sel penyengat yang terletak di tentakelnya. Sel penyengat ini diperlukan karang untuk mendapatkan makanan (Sisson 1973)."
+                android:text="Koloni spesies ini berukuran kecil dan arborescent, biasanya membentuk semak belukar. Cabang-cabangnya ramping dan lurus. Warnanya biasanya abu-abu pucat, namun terkadang coklat pucat atau krem. Koloni seringkali berukuran melebihi 2 meter dan dapat membentuk tegakan spesies tunggal yang luas. Percabangan bersifat arborescent, biasanya membentuk semak belukar. Cabang-cabangnya ramping dan lurus. Cabang pembantu dapat terjadi pada interval yang tidak teratur. Koralit radial berukuran kecil, banyak, dan berukuran serupa."
                 android:textSize="14dp" />
 
             <TextView
@@ -137,7 +137,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Acropora cervicornis menampung banyak makhluk, beberapa di antaranya mungkin berguna dalam bidang penelitian medis. Beberapa spesies yang hidup di karang telah menghasilkan senyawa yang aktif melawan peradangan, asma, leukemia, tumor, penyakit jantung, infeksi jamur dan bakteri, dan bahkan virus termasuk HIV (Chadwick 1999). Karang staghorn juga sangat penting untuk stabilisasi garis pantai, sebagai habitat ikan, dan untuk melindungi keanekaragaman hayati kita (Nemoto 1992)."
+                android:text="Acropora Microphthalma menampung banyak makhluk. Karang staghorn juga sangat penting untuk stabilisasi garis pantai, sebagai habitat ikan, dan untuk melindungi keanekaragaman hayati kita (Nemoto 1992)."
                 android:textSize="14dp" />
 
             <TextView
@@ -158,7 +158,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Terumbu karang di wilayah tropis Pasifik bagian timur telah terdegradasi paling parah akibat peristiwa iklim. Apalagi pasca El Nino tahun 1982-1983. Banyak terumbu karang yang terus memburuk sejak saat itu karena jumlah karang yang masuk sangat sedikit dan bulu babi terus mengikis kerangka karang. Pemutihan karang (hilangnya zooxanthellae dan/atau pigmen) semakin meluas dan sering terjadi. Dalam survei terhadap lebih dari 2.000 lokasi di Kepulauan Virign Inggris, ditemukan bahwa lebih dari 95% Acropora mati pada tahun 1993. ( Birkeland , 1997 )"
+                android:text="Karang ini merupakan spesies umum dan tidak ada ancaman spesifik spesies yang teridentifikasi. Ancaman utama yang dihadapi karang secara umum berkaitan dengan perubahan iklim dan perusakan mekanis terhadap habitat terumbu karang; meningkatnya kerusakan akibat peristiwa cuaca ekstrem, kenaikan suhu air laut, dan pengasaman laut . Persatuan Internasional untuk Konservasi Alam telah menilai status konservasi spesies ini sebagai 'hampir terancam'."
                 android:textSize="14dp" />
         </LinearLayout>
     </ScrollView>
