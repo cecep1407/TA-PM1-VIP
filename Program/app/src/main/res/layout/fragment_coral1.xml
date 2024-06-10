@@ -7,7 +7,7 @@
     tools:context=".fragments.Coral1Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/header_coral1_layout"
+        android:id="@+id/header_coral2_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/header_background"
@@ -55,10 +55,7 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="12dp"
-                    android:src="@drawable/acropora_cervicurnis"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_judul_coral1" />
+                    android:src="@drawable/acropora_cervicurnis"/>
 
             <TextView
                 android:id="@+id/textView3"

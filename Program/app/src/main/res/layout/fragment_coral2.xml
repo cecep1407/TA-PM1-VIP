@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Coral2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_coral2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_header"
+            android:text="Terumbu Karang 2"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="78dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_judul_coral1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="Acropora Microphtahalma"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="236dp"
+                android:layout_height="100dp"
+                android:src="@drawable/acropora_microphthalma"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Rentang Geografis"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Spesies dari genus -Acropora- menyukai lingkungan laut air hangat. Secara khusus, - Acropora cervicornis - merupakan salah satu karang pembentuk terumbu utama di Karibia (Birkeland 1997). Spesies ini juga terdapat di Great Barrier Reef Australia (McGregor 1974)."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Habitat"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Acropora cervicornis suka hidup di perairan laut hangat yang dekat dengan permukaan. Wilayah lautan tropis bagian barat merupakan tempat dimana terdapat sebagian besar keanekaragaman organisme terumbu karang (Birkeland 1997). Polip pembentuk karang membutuhkan perairan tropis yang suhunya lebih dari 20 derajat celcius dan cukup cahaya. Mereka juga membutuhkan permukaan yang keras agar polip karang dapat menetap. Karang staghorn, seperti halnya karang lainnya, membutuhkan air yang sangat beroksigen dan mengandung persediaan hewan planktonik kecil yang cukup. Karang juga membutuhkan air yang jernih, karena selain mengurangi cahaya, hujan sedimen yang deras juga akan menutupi karang (McGregor 1974)"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Deskripsi Fisik"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Karang-karang ini umumnya mempunyai tentakel dalam kelipatan tiga, yang merupakan ciri khas semua karang yang termasuk dalam subkelas Zoantharia, juga dikenal sebagai Hexacorallia (Encarta 1997). Pada malam hari, tentakel karang kecil seperti jari muncul. Mereka memompa dirinya sendiri dengan air dan muncul seperti bintang-bintang kecil di seluruh terumbu karang (Sargent 1991). Karang staghorn, - A. cervicornis -, tumbuh menjadi 'cabang seperti tanduk' sehingga polipnya menonjol di atas pasir (McGregor 1974). Karang staghorn memiliki nematocyst, yaitu sel penyengat yang terletak di tentakelnya. Sel penyengat ini diperlukan karang untuk mendapatkan makanan (Sisson 1973)."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Kepentingan Ekonomi bagi Manusia: Positif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Acropora cervicornis menampung banyak makhluk, beberapa di antaranya mungkin berguna dalam bidang penelitian medis. Beberapa spesies yang hidup di karang telah menghasilkan senyawa yang aktif melawan peradangan, asma, leukemia, tumor, penyakit jantung, infeksi jamur dan bakteri, dan bahkan virus termasuk HIV (Chadwick 1999). Karang staghorn juga sangat penting untuk stabilisasi garis pantai, sebagai habitat ikan, dan untuk melindungi keanekaragaman hayati kita (Nemoto 1992)."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Status konservasi"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Terumbu karang di wilayah tropis Pasifik bagian timur telah terdegradasi paling parah akibat peristiwa iklim. Apalagi pasca El Nino tahun 1982-1983. Banyak terumbu karang yang terus memburuk sejak saat itu karena jumlah karang yang masuk sangat sedikit dan bulu babi terus mengikis kerangka karang. Pemutihan karang (hilangnya zooxanthellae dan/atau pigmen) semakin meluas dan sering terjadi. Dalam survei terhadap lebih dari 2.000 lokasi di Kepulauan Virign Inggris, ditemukan bahwa lebih dari 95% Acropora mati pada tahun 1993. ( Birkeland , 1997 )"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
