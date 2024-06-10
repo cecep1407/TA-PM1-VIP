@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import com.uti.coralsee.MainActivity
 import com.uti.coralsee.R
 import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentInputLoginBinding
@@ -53,6 +54,8 @@ class InputLoginFragment : Fragment() {
             val loginSukses = lite.login(username, pass)
             if (loginSukses){
                 Toast.makeText(requireContext(), "Login Berhasil", Toast.LENGTH_SHORT).show()
+                val intent = Intent(requireContext(), MainActivity::class.java)
+                startActivity(intent)
             } else{
                 Toast.makeText(requireContext(), "Username/Password Salah", Toast.LENGTH_SHORT).show()
             }
