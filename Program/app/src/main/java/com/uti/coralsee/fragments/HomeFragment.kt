@@ -47,6 +47,12 @@ class HomeFragment : Fragment() {
         binding.cardCoral2.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral2Fragment()).commit()
         }
+        binding.cardCoral3.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral3Fragment()).commit()
+        }
+        binding.cardCoral4.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral4Fragment()).commit()
+        }
         return binding.root
     }
 
