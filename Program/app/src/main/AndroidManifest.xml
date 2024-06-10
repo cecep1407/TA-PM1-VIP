@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoralSee"
         tools:targetApi="31">
-
+        <activity
+            android:name=".CheckLoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_check_login"
+            android:theme="@style/Theme.CoralSee" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="false" />
