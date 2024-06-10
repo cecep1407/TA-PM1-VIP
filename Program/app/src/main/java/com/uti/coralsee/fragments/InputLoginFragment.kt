@@ -51,12 +51,20 @@ class InputLoginFragment : Fragment() {
         binding.btnLogin.setOnClickListener {
             var username = binding.inpLoginUsername.text.toString()
             val pass = binding.inpLoginPassword.text.toString()
+//            Kondisi Jika Input Kosong
+            if (username.isEmpty() || pass.isEmpty()){
+                Toast.makeText(requireContext(), "Username/Password Tidak Boleh Kosong", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             val loginSukses = lite.login(username, pass)
+//            Kondisi Jika login berhasil
             if (loginSukses){
                 Toast.makeText(requireContext(), "Login Berhasil", Toast.LENGTH_SHORT).show()
                 val intent = Intent(requireContext(), MainActivity::class.java)
                 startActivity(intent)
-            } else{
+            }
+//            Kondisi Jika login gagal
+            else{
                 Toast.makeText(requireContext(), "Username/Password Salah", Toast.LENGTH_SHORT).show()
             }
         }
