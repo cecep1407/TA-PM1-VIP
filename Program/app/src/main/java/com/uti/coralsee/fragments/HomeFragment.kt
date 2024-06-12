@@ -1,11 +1,14 @@
 package com.uti.coralsee.fragments
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.uti.coralsee.R
+import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentCreateUsernameBinding
 import com.uti.coralsee.databinding.FragmentHomeBinding
 
@@ -36,10 +39,20 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        val sharedPreferences = requireContext().getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+        // Ambil nama pengguna yang login dari penyimpanan lokal
+        val firstName = sharedPreferences.getString("logged_in_user", null)
+//         kondisi untuk menampilkan nama pengguna yang login
+//        if (firstName != null) {
+//            Log.d("Lite", "Nama pengguna yang login: $firstName")
+//        } else {
+//            Log.d("Lite", "Tidak ada pengguna yang login")
+//        }
 
-//        buat variable binding
+        // buat variable binding
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
+//          Menampilkan nama pengguna yang login
+        binding.txtName.text = firstName
 
         binding.cardCoral1.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral1Fragment()).commit()
@@ -74,5 +87,7 @@ class HomeFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+
     }
 }

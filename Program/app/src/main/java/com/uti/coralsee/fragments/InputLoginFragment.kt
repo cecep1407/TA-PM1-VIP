@@ -1,5 +1,6 @@
 package com.uti.coralsee.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -40,6 +41,7 @@ class InputLoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
 //        Buat Variable Binding
         val binding = FragmentInputLoginBinding.inflate(inflater, container, false)
@@ -59,6 +61,11 @@ class InputLoginFragment : Fragment() {
             val loginSukses = lite.login(username, pass)
 //            Kondisi Jika login berhasil
             if (loginSukses){
+                val sharedPreferences = requireContext().getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+                // Simpan nama pengguna yang login
+                editor.putString("logged_in_user", username)
+                editor.apply()
                 Toast.makeText(requireContext(), "Login Berhasil", Toast.LENGTH_SHORT).show()
                 val intent = Intent(requireContext(), MainActivity::class.java)
                 startActivity(intent)

@@ -37,7 +37,7 @@ class CreateUsernameFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        // Inflate the layout for this fragment
 //Deklarasi Binding
         val binding = FragmentCreateUsernameBinding.inflate(inflater, container, false)
 //Panggil class Lite
