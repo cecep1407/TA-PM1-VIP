@@ -72,6 +72,26 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         db.close()
         return firstName
     }
+    fun getShortenedName(loggedInUser: String?): String? {
+        val db = readableDatabase
+        val query = "SELECT nama_lengkap FROM pengguna WHERE username = ?"
+        val cursor = db.rawQuery(query, arrayOf(loggedInUser))
+        var shortenedName: String? = null
+        if (cursor != null && cursor.moveToFirst()) {
+            val fullName = cursor.getString(cursor.getColumnIndexOrThrow("nama_lengkap"))
+            val parts = fullName.split(" ")
+            if (parts.size >= 3) {
+                val firstName = parts[0]
+                val middleInitials = parts.subList(1, parts.size - 1).joinToString(separator = " ") { "${it.firstOrNull()?.toUpperCase()}. " }
+                val lastName = parts[parts.size - 1]
+                shortenedName = "$firstName $middleInitials $lastName"
+            }
+            cursor.close()
+        }
+        db.close()
+        return shortenedName
+    }
+
 
 
 
