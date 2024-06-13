@@ -28,7 +28,8 @@ class LoginActivity : AppCompatActivity() {
         if (loggedInUser != null) {
             // Pengguna sudah login, arahkan ke halaman utama
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)        } else {
+            startActivity(intent)        }
+        else {
             // Pengguna belum login, tampilkan halaman login
             supportFragmentManager.beginTransaction().add(R.id.frm_containter_login, InputLoginFragment()).commit()
         }
