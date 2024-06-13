@@ -59,17 +59,20 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         db.close()
         return result
     }
-    fun getFirstName(): String? {
+    fun getFirstName(loggedInUser: String?): String? {
         val db = readableDatabase
-        val query = "SELECT nama_lengkap FROM pengguna"
-        val cursor = db.rawQuery(query, null)
+        val query = "SELECT nama_lengkap FROM pengguna WHERE username = ?"
+        val cursor = db.rawQuery(query, arrayOf(loggedInUser))
         var firstName: String? = null
         if (cursor != null && cursor.moveToFirst()) {
-            firstName = cursor.getString(cursor.getColumnIndexOrThrow("nama_lengkap"))
+            val fullName = cursor.getString(cursor.getColumnIndexOrThrow("nama_lengkap"))
+            firstName = fullName.split(" ").firstOrNull()
             cursor.close()
         }
         db.close()
         return firstName
     }
+
+
 
 }

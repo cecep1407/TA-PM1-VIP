@@ -61,7 +61,7 @@ class InputLoginFragment : Fragment() {
             val loginSukses = lite.login(username, pass)
 //            Kondisi Jika login berhasil
             if (loginSukses){
-                val sharedPreferences = requireContext().getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+                val sharedPreferences = requireContext().getSharedPreferences("namauser", Context.MODE_PRIVATE)
                 val editor = sharedPreferences.edit()
                 // Simpan nama pengguna yang login
                 editor.putString("logged_in_user", username)
