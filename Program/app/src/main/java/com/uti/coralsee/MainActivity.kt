@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
 
 
         supportFragmentManager.beginTransaction().add(R.id.frmContainer, HomeFragment()).commit()
+        binding.imghome.setOnClickListener {
+            supportFragmentManager.beginTransaction().replace(R.id.frmContainer, HomeFragment()).commit()
+        }
 
         binding.imgprofile.setOnClickListener {
             val sharedPreferences = getSharedPreferences("namauser", Context.MODE_PRIVATE)
