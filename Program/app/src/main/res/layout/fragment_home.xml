@@ -20,7 +20,7 @@
             android:layout_marginTop="22dp"
             android:fontFamily="@font/font_header"
             android:text="Halo"
-            android:textColor="#9BEC00"
+            android:textColor="@color/white"
             android:textSize="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
