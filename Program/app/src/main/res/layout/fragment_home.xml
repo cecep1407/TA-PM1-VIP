@@ -9,19 +9,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/header_background">
+        android:layout_height="120dp"
+        android:background="@drawable/header_background"
+        android:padding="24dp">
 
         <TextView
-            android:id="@+id/txt_header"
+            android:id="@+id/txt_halo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_marginTop="22dp"
             android:fontFamily="@font/font_header"
-            android:text="CoralSea"
-            android:textColor="@color/white"
+            android:text="Halo"
+            android:textColor="#9BEC00"
             android:textSize="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,20 +29,33 @@
             android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="8dp"
             android:fontFamily="@font/font_header"
             android:textColor="@color/white"
             android:textSize="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_halo"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_header"
+            android:text="Welcome To CoralSea"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_halo"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="88dp">
+        android:layout_marginTop="121dp">
 
         <TextView
             android:id="@+id/textView2"
