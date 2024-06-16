@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.animation.slideIn
+import androidx.fragment.app.FragmentTransaction
 import com.uti.coralsee.R
 import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentHomeBinding
@@ -54,16 +56,32 @@ class HomeFragment : Fragment() {
         binding.txtName.text = firstName
 
         binding.cardCoral1.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral1Fragment()).commit()
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral1Fragment()).commit()
         }
         binding.cardCoral2.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral2Fragment()).commit()
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral2Fragment()).commit()
         }
         binding.cardCoral3.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral3Fragment()).commit()
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral3Fragment()).commit()
         }
         binding.cardCoral4.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, Coral4Fragment()).commit()
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral4Fragment()).commit()
         }
         return binding.root
     }
