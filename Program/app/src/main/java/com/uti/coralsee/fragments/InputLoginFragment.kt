@@ -56,6 +56,7 @@ class InputLoginFragment : Fragment() {
 //            Kondisi Jika Input Kosong
             if (username.isEmpty() || pass.isEmpty()){
                 Toast.makeText(requireContext(), "Username/Password Tidak Boleh Kosong", Toast.LENGTH_SHORT).show()
+                binding.inpLoginUsername.requestFocus()
                 return@setOnClickListener
             }
             // Periksa apakah username terdaftar
@@ -78,10 +79,9 @@ class InputLoginFragment : Fragment() {
             }
 //            Kondisi Jika login gagal
             else{
-                Toast.makeText(requireContext(), "Password Salah", Toast.LENGTH_SHORT).show()
+                binding.inpLoginPassword.error = "Password Salah"
                 binding.inpLoginPassword.requestFocus()
                 return@setOnClickListener
-
             }
         }}
 
