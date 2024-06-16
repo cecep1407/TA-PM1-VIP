@@ -58,6 +58,12 @@ class InputLoginFragment : Fragment() {
                 Toast.makeText(requireContext(), "Username/Password Tidak Boleh Kosong", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            // Periksa apakah username terdaftar
+            if (!lite.isUsernameExists(username)) {
+                Toast.makeText(requireContext(), "Username belum terdaftar", Toast.LENGTH_SHORT).show()
+                binding.inpLoginUsername.requestFocus()
+                return@setOnClickListener
+            } else {
             val loginSukses = lite.login(username, pass)
 //            Kondisi Jika login berhasil
             if (loginSukses){
@@ -72,9 +78,12 @@ class InputLoginFragment : Fragment() {
             }
 //            Kondisi Jika login gagal
             else{
-                Toast.makeText(requireContext(), "Username/Password Salah", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Password Salah", Toast.LENGTH_SHORT).show()
+                binding.inpLoginPassword.requestFocus()
+                return@setOnClickListener
+
             }
-        }
+        }}
 
 //          Buat Event SignUp
         binding.btnSignUp.setOnClickListener {

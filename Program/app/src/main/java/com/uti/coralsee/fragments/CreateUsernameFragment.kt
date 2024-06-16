@@ -43,32 +43,71 @@ class CreateUsernameFragment : Fragment() {
 //Panggil class Lite
         val lite = Lite(requireContext())
 //        Event Button SignUp
-        binding.btnCreateUser.setOnClickListener() {
-            val nama = binding.inpName.text.toString()
-            val email = binding.inpEmail.text.toString()
-            val username = binding.inpUsername.text.toString()
-            val password = binding.inpPassword.text.toString()
-            val pengguna = Lite.Pengguna(nama, email, username, password)
+        binding.btnCreateUser.setOnClickListener {
+            val nama = binding.inpName.text.toString().trim()
+            val email = binding.inpEmail.text.toString().trim()
+            val username = binding.inpUsername.text.toString().trim()
+            val password = binding.inpPassword.text.toString().trim()
+
+            // Validasi input kosong
+            if (nama.isEmpty()) {
+                binding.inpName.error = "Nama harus diisi"
+                binding.inpName.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (email.isEmpty()) {
+                binding.inpEmail.error = "Email harus diisi"
+                binding.inpEmail.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Validasi format email
+            if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.inpEmail.error = "Format email tidak valid"
+                binding.inpEmail.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (username.isEmpty()) {
+                binding.inpUsername.error = "Username harus diisi"
+                binding.inpUsername.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (password.isEmpty()) {
+                binding.inpPassword.error = "Password harus diisi"
+                binding.inpPassword.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Validasi apakah email sudah terdaftar
+            if (lite.isEmailExists(email)) {
+                binding.inpEmail.error = "Email sudah terdaftar"
+                binding.inpEmail.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Validasi apakah username sudah digunakan
             if (lite.isUsernameExists(username)) {
+                binding.inpUsername.error = "Username sudah digunakan"
+                binding.inpUsername.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Jika semua validasi lolos, buat pengguna baru
+            val pengguna = Lite.Pengguna(nama, email, username, password)
+            val hasil = lite.insertPengguna(pengguna)
+            if (hasil != -1L) {
                 Toast.makeText(
                     requireContext(),
-                    "Username sudah digunakan, silakan gunakan username lain",
+                    "Sign Up Berhasil, Silakan Login",
                     Toast.LENGTH_SHORT
                 ).show()
-            } else {
-                val hasil = lite.insertPengguna(pengguna)
-                if (hasil != -1L) {
-                    Toast.makeText(
-                        requireContext(),
-                        "Sign Up Berhasil, Silakan Login",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                } else {
-                    Toast.makeText(requireContext(), "Gagal memasukkan data", Toast.LENGTH_SHORT)
-                        .show()
-                }
                 requireActivity().supportFragmentManager.beginTransaction()
                     .replace(R.id.frm_containter_login, InputLoginFragment()).commit()
+            } else {
+                Toast.makeText(requireContext(), "Gagal memasukkan data", Toast.LENGTH_SHORT).show()
             }
         }
 

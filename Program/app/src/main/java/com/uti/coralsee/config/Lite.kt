@@ -101,6 +101,15 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         db.close()
         return exists
     }
+    fun isEmailExists(email: String): Boolean {
+        val db = readableDatabase
+        val query = "SELECT * FROM pengguna WHERE email = ?"
+        val cursor = db.rawQuery(query, arrayOf(email))
+        val exists = cursor.count > 0
+        cursor.close()
+        db.close()
+        return exists
+    }
 
 
 
