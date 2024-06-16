@@ -3,4 +3,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Coral4Fragment"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Coral4Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_coral4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header_background"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_header"
+            android:text="Terumbu Karang 4"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_judul_coral4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="Sidesratra  Sidereal"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="236dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/siderastrea_sidereal" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Rentang Geografis"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Siderastrea siderea ditemukan di Laut Karibia dan Teluk Meksiko bagian utara dan di sekitar pantai selatan Florida, Bahama, dan Bermuda. Hal ini dapat terjadi pada kedalaman hingga 40 meter (130 kaki) tetapi paling umum terjadi pada perairan kurang dari 10 meter (33 kaki). Hal ini ditemukan di bebatuan di berbagai lingkungan terumbu tetapi tidak di kolam pasang surut atau daerah berlumpur."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Penelitian"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Siderastrea siderea adalah spesies yang tumbuh sangat lambat dan hidup sampai usia yang sangat tua. Dalam sebuah penelitian, inti karang dibor dan sampel diambil dari karang di zona berbeda untuk menentukan apakah laju pertumbuhan telah berubah selama seratus tahun terakhir. Ditemukan bahwa untuk spesimen terumbu karang dan dekat pantai, laju perluasan kerangka tidak berubah secara signifikan dalam periode ini. Namun, laju pertumbuhan karang di bagian depan telah menurun drastis, zona ini berubah dari zona dengan pertumbuhan tercepat menjadi zona dengan laju pertumbuhan paling lambat. Penyebabnya belum diteliti, namun kemungkinan penyebabnya mencakup peningkatan sedimentasi dan kekeruhan air, eutrofikasi , atau tekanan termal. [6] Di Florida Keys, spesies ini menunjukkan tingkat pertumbuhan (kalsifikasi) yang lebih besar di Taman Nasional Dry Tortugas yang terpencil dibandingkan dengan lokasi lepas pantai lainnya di saluran terumbu Florida."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Deskripsi Fisik"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Siderastrea siderea merupakan karang kolonial yang membentuk kubah rendah atau struktur berbentuk bongkahan batu dengan permukaan berlesung halus selebar 2 meter (6 kaki 7 inci) di dasar laut. [3] Penyakit ini bisa menjadi mengeras ketika masih muda. [3] Koralit , cekungan berkapur berbentuk cangkir tempat polip berada, lebarnya sekitar 5 milimeter (0,20 inci) dengan sekitar 50 atau 60 punggung kecil yang disebut septa . [4] Warna umumnya coklat kemerahan. Spesies ini dapat disalahartikan sebagai karang bintang kecil ( Siderastrea radians ) yang berkerabat dekat, namun biasanya berukuran lebih kecil dan memiliki koralit yang lebih dalam dan bersudut, masing-masing memiliki 30 hingga 40 septa."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Kepentingan Ekonomi bagi Manusia: Positif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Siderastrea Sidereal menampung banyak makhluk, beberapa di antaranya mungkin berguna dalam bidang penelitian medis. Sebagai habitat ikan, dan untuk melindungi keanekaragaman hayati kita."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/font_title"
+                android:text="Status konservasi"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Dalam Daftar Merah Spesies Terancam Punah IUCN , karang bintang muda yang masif terdaftar sebagai spesies yang sangat terancam punah. Pulau ini cukup rentan terhadap pemutihan karang namun mampu pulih ketika kondisinya membaik."
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
