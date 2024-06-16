@@ -43,20 +43,34 @@ class CreateUsernameFragment : Fragment() {
 //Panggil class Lite
         val lite = Lite(requireContext())
 //        Event Button SignUp
-        binding.btnCreateUser.setOnClickListener(){
-        val nama = binding.inpName.text.toString()
-        val email = binding.inpEmail.text.toString()
-        val username = binding.inpUsername.text.toString()
-        val password = binding.inpPassword.text.toString()
-        val pengguna = Lite.Pengguna(nama,email, username, password)
-        val hasil = lite.insertPengguna(pengguna)
-        if (hasil != -1L) {
-            Toast.makeText(requireContext(), "Sign Up Berhasil, Silakan Login", Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(requireContext(), "Gagal memasukkan data", Toast.LENGTH_SHORT).show()
+        binding.btnCreateUser.setOnClickListener() {
+            val nama = binding.inpName.text.toString()
+            val email = binding.inpEmail.text.toString()
+            val username = binding.inpUsername.text.toString()
+            val password = binding.inpPassword.text.toString()
+            val pengguna = Lite.Pengguna(nama, email, username, password)
+            if (lite.isUsernameExists(username)) {
+                Toast.makeText(
+                    requireContext(),
+                    "Username sudah digunakan, silakan gunakan username lain",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                val hasil = lite.insertPengguna(pengguna)
+                if (hasil != -1L) {
+                    Toast.makeText(
+                        requireContext(),
+                        "Sign Up Berhasil, Silakan Login",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    Toast.makeText(requireContext(), "Gagal memasukkan data", Toast.LENGTH_SHORT)
+                        .show()
+                }
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.frm_containter_login, InputLoginFragment()).commit()
+            }
         }
-        requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frm_containter_login, InputLoginFragment()).commit()
-    }
 
         return binding.root
     }
