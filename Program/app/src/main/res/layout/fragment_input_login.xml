@@ -35,6 +35,8 @@
                     android:id="@+id/inp_Login_Username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:inputType="textFilter"
                     android:hint="Username" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -53,6 +55,8 @@
                     android:id="@+id/inp_Login_Password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:inputType="textPassword"
                     android:hint="Password" />
             </com.google.android.material.textfield.TextInputLayout>
 
