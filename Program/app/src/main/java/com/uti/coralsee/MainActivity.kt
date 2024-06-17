@@ -26,6 +26,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imgprofile.setOnClickListener {
-            supportFragmentManager.beginTransaction().replace(R.id.frmContainer, ProfileFragment()).commit()
+            supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.frmContainer, ProfileFragment()).commit()
         }
     }}

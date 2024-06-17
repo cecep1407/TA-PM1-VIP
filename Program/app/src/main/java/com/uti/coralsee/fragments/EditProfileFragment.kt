@@ -67,11 +67,10 @@ class EditProfileFragment : Fragment() {
                 val lite = Lite(requireContext())
                 lite.updateUser(loggedInUser, updatedFullName, updatedEmail)
 
-                // Kembali ke halaman profil setelah menyimpan perubahan
-                requireActivity().supportFragmentManager.beginTransaction()
-                    .replace(R.id.frmContainer, ProfileFragment()).commit()
-                Toast.makeText(requireContext(), "Data Berhasil Diubah", Toast.LENGTH_SHORT).show()
             }
+            // Kembali ke halaman profil setelah menyimpan perubahan
+            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frmContainer, ProfileFragment()).commit()
+            Toast.makeText(requireContext(), "Data Berhasil Diubah", Toast.LENGTH_SHORT).show()
         }
 
         return binding.root

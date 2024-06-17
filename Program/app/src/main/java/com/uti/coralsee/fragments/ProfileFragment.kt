@@ -59,7 +59,7 @@ class ProfileFragment : Fragment() {
 
 //       buat event edit profile
         binding.btnEditProfile.setOnClickListener {
-            requireActivity().supportFragmentManager.beginTransaction()
+            requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null)
                 .replace(R.id.frmContainer, EditProfileFragment()).commit()
         }
 

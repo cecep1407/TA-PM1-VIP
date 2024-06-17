@@ -55,6 +55,8 @@ class HomeFragment : Fragment() {
 //          Menampilkan nama pengguna yang login
         binding.txtName.text = firstName
 
+
+
 //          Buat event untuk Jenis Terumbu Karang
         binding.cardCoral1.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
