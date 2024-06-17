@@ -72,6 +72,18 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         db.close()
         return firstName
     }
+    fun getNamaLengkap(username: String?): String? {
+        val db = readableDatabase
+        val query = "SELECT nama_lengkap FROM pengguna WHERE username = ?"
+        val cursor = db.rawQuery(query, arrayOf(username))
+        var namaLengkap: String? = null
+        if (cursor != null && cursor.moveToFirst()) {
+            namaLengkap = cursor.getString(cursor.getColumnIndexOrThrow("nama_lengkap"))
+            cursor.close()
+        }
+        db.close()
+        return namaLengkap
+    }
     fun getShortenedName(loggedInUser: String?): String? {
         val db = readableDatabase
         val query = "SELECT nama_lengkap FROM pengguna WHERE username = ?"
@@ -109,6 +121,20 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         cursor.close()
         db.close()
         return exists
+    }
+
+
+    fun getEmail(username: String?): String? {
+        val db = readableDatabase
+        val query = "SELECT email FROM pengguna WHERE username = ?"
+        val cursor = db.rawQuery(query, arrayOf(username))
+        var email: String? = null
+        if (cursor != null && cursor.moveToFirst()) {
+            email = cursor.getString(cursor.getColumnIndexOrThrow("email"))
+            cursor.close()
+        }
+        db.close()
+        return email
     }
 
 

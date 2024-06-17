@@ -1,11 +1,14 @@
 package com.uti.coralsee.fragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.uti.coralsee.R
+import com.uti.coralsee.config.Lite
+import com.uti.coralsee.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,8 +37,27 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val sharedPreferences = requireContext().getSharedPreferences("namauser", Context.MODE_PRIVATE)
+        // Ambil nama pengguna yang login dari penyimpanan lokal
+        val loggedInUser = sharedPreferences.getString("logged_in_user", null)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+//        deklarasi variabel binding
+        val binding = FragmentProfileBinding.inflate(inflater, container, false)
+
+
+        val lite = Lite(requireContext())
+        val Nama = lite.getNamaLengkap(loggedInUser)
+        val Email = lite.getEmail(loggedInUser)
+
+
+//       Menampilkan data
+        binding.txtNamaProfile.text = Nama
+        binding.txtEmailProfile.text = Email
+        binding.txtUsernameProfile.text = loggedInUser
+
+
+
+        return binding.root
     }
 
     companion object {
