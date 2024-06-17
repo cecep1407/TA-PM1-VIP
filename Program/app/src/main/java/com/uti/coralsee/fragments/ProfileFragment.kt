@@ -1,11 +1,13 @@
 package com.uti.coralsee.fragments
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.uti.coralsee.LoginActivity
 import com.uti.coralsee.R
 import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentProfileBinding
@@ -55,13 +57,19 @@ class ProfileFragment : Fragment() {
         binding.txtEmailProfile.text = Email
         binding.txtUsernameProfile.text = loggedInUser
 
+//       buat event edit profile
+        binding.btnEditProfile.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.frmContainer, EditProfileFragment()).commit()
+        }
+
 //        buat evet button logout
         binding.btnLogout.setOnClickListener {
             val editor = sharedPreferences.edit()
             editor.remove("logged_in_user")
             editor.apply()
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.frm_containter_login, InputLoginFragment()).commit()
+            val intent = Intent(requireActivity(), LoginActivity::class.java)
+            startActivity(intent)
         }
 
         return binding.root

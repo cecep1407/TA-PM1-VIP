@@ -136,6 +136,15 @@ class Lite(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSI
         db.close()
         return email
     }
+    fun updateUser(username: String?, newFullName: String?, newEmail: String?) {
+        val db = readableDatabase
+        val values = ContentValues().apply {
+            put("nama_lengkap", newFullName)
+            put("email", newEmail)
+        }
+        db.update("pengguna", values, "username = ?", arrayOf(username))
+        db.close()
+    }
 
 
 
