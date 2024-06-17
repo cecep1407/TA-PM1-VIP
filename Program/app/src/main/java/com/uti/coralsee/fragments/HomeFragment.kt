@@ -55,6 +55,7 @@ class HomeFragment : Fragment() {
 //          Menampilkan nama pengguna yang login
         binding.txtName.text = firstName
 
+//          Buat event untuk Jenis Terumbu Karang
         binding.cardCoral1.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
                 android.R.anim.slide_in_left,
@@ -82,6 +83,23 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral4Fragment()).commit()
+        }
+
+//        Buat Event Untuk Artikel
+        binding.artikel1.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel1Fragment()).commit()
+        }
+
+        binding.artikel2.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel2Fragment()).commit()
         }
         return binding.root
     }
