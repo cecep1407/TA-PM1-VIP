@@ -3,12 +3,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.Artikel2Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_artikel2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header_background"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_header"
+            android:text="Artikel 2"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="100dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_judul_artikel2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="Budidaya Terumbu Karang"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/artikel2" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Potensi keindahan yang paling nyata dapat kita lihat melalui kedalaman laut. Beberapa laut di Indonesia memiliki jenis-jenis terumbu karang yang amat cantik. Sayangnya, tidak sedikit pula kerusakan yang terjadi pada biota laut ini karena berbagai hal, terutama karena ulah tangan-tangan tidak bertanggungjawab milik manusia.
+
+                \n\nKerusakan terumbu karang sebagai habitat para hewan laut menjadi hal yang harus ditindaklanjuti. Saat terumbu karang rusak, secara otomatis dapat merusak biota laut yang hidup di dalamnya. Maka dari itulah harus ada budidaya terumbu karang untuk merehabititasi ekosistem terumbu karang yang sudah rusak. Proses budidaya terumbu karang yang cukup efektif dengan cara transplatasi karang. Adapun Cara Budidaya Terumbu Karang yaitu :"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="1. Memilih dan Menentukan Lokasi Terumbu Karang"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Berdasarkan pengamatan para ahli, pemilihan dan penentuan lokasi untuk proses transplantasi terumbu karang sangatlah penting. Pertumbuhan karang yang prosesnya terbilang cukup lama dan panjang, membutuhkan lokasi yang minim kandungan mikro alga karena jenis-jenis alga dan penyakit karang lainnya adalah faktor-faktor yang harus diperhatikan untuk proses rehabilitasi terumbu karang."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="2. Melakukan Seleksi Bibit Karang dengan Selektif"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Alga dan berbagai penyakit karang rupanya dapat menyerang pada bibit karang yang sedang dalam persiapan untuk transplantasi sehingga perlu selektif dalam memilih bibit karang yang sehat. Ciri bibit karang yang sehat dapat dilihar dari warnanya yang cerah dan tegas."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="3. Meminimalisir Keadaan Bibit Terumbu Karang yang Stres"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Terumbu karang yang mengalami stres biasanya akan mengeluarkan cairan lendir yang banyak. Terumbu karang terkadang mengalami stres karena proses transplantasi yang tidak benar. Saat bibit terumbu karang akan diangkat dari asalnya, terumbu karang harus ditempatkan dalam wadah plastik untuk menghindari terjadinya stres."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="4. Memberikan Pemantauan dan Perawatan terhadap Bibit Karang"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Saat bibit karang sudah dipasang dan dalam proses pertumbuhan, harus dilakukan pemantauan dan pembersihan karang secara berkala.  Hal ini dilakukan untuk menjaga kesehatan bibit karang. Bibit karang yang sudah terjangkit penyakit biasanya akan sulit dipulihkan kembali. Cara satu-satunya hanya dengan memotong karang yang sudah berpenyakit agar penyakit tersebut  tidak menyebarluas. Pada banyak kasus, sangat jarang karang yang sudah terjangkit penyakit dapat kembali pulih dan tumbuh dengan sehat."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="5. Memilih Metode Transplantasi yang Tepat"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ada banyak metode yang dapat diaplikasikan untuk proses transplantasi karang, diantaranya metode rak, metode jaring, metode substrat, dan metode beton. Berbagai metode ini dapat digunakan sesuai dengan kondisi lokasi terumbu karang. Adapun beberapa keunggulan dari metode-metode tersebut, diantaranya :
+\n\n -Metode rak, jaring, dan substrat banyak digunakan untuk budidaya karang hias. Metode ini banyak digunakan karena memudahkan secara operasional.
+\n -Metode beton lebih direkomendasikan untuk budidaya karang dengan tujuan untuk merehabilititasi terumbu karang yang rusak.
+\n -Metode rak, jaring, dan substrat yang bahan-bahannya terbuat dari kayu, pipa ataupun besi tidak cukup kuat untuk menahan beban dari terumbu karang. Terumbu karang akan terus tumbuh dan berkembang, sehingga koloni karang akan semakin membesar.
+\n -Metode beton yang terbuat dari beton memiliki konstruksi yang kuat dan mampu menahan beban terumbu karang yang semakin membesar. Penggunaan beton jauh lebih stabil dibandingkan dengan kayu, pipa atau besi. Pada banyak kasus, media beton ini dapat dijadikan tempat untuk penempelan larva karang dan penempelan karang secara alami tanpa bantuan manusia."
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
