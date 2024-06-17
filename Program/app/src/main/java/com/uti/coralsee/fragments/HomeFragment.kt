@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.addCallback
 import androidx.compose.animation.slideIn
 import androidx.fragment.app.FragmentTransaction
 import com.uti.coralsee.R
@@ -55,8 +56,6 @@ class HomeFragment : Fragment() {
 //          Menampilkan nama pengguna yang login
         binding.txtName.text = firstName
 
-
-
 //          Buat event untuk Jenis Terumbu Karang
         binding.cardCoral1.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
@@ -102,6 +101,11 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel2Fragment()).commit()
+        }
+        // Set listener untuk tombol back
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            // Panggil finishAffinity() saat tombol back ditekan di HomeFragment
+            requireActivity().finishAffinity()
         }
         return binding.root
     }
