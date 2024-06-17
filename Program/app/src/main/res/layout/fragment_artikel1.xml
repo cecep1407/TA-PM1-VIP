@@ -3,12 +3,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.Artikel1Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_artikel1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header_background"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_header"
+            android:text="Artikel 1"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/txt_judul_artikel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="5 Cara Melestarikan Terumbu Karang"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/artikel1" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/font_title"
+                android:text="1. Menjaga kebersihan sungai dan pesisir pantai"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Keberadaan aliran sungai dan laut penting dalam proses siklus air. Fungsi sungai antara lain sebagai sarana dalam transportasi. Bukan hanya sarana transportasi, sungai juga dijadikan sebagai tempat mandi, mencuci, bahkan untuk membuang limbah keluarga/pabrik. limbah pabrik biasanya mengandung bayak logam berbahaya. bahaya logam berat bagi lingkungan sangat besar sehingga perlu diawasi lebih ketat karena limbah sampah dan pabrik yang dibuang kesungai pada akhirnya akan bermuara di laut.
+                \n\nSama halnya seperti membuang sampah di pantai. Sampah yang berceceran di sungai, seperti sampah plastik, akhirnya akan tersapu ombak dan merusak terumbu karang. Dampak sampah plastik pada terumbu karang utamanya menjadi penghalang cahaya matahari. Terumbu karang membutuhkan cahaya dengan intensitas tertentu agar dapat berkembang optimal. Cahaya matahari dibutuhkan untuk melangsungkan proses fotosintesis yang dilakukan oleh zooxantellae yang ada di jaringan karang. Sampah yang dibuang ke laut akan menghambat proses ini. Sampah plastik misalnya, dapat menutupi karang sehingga zooxantellae tidak mendapat intensitas optimal untuk fotosintesisnya. Apabila keadaan ini terus menerus terjadi, maka karang akan mati."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="2. Mencegah terjadinya erosi"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Erosi merupakan proses pengikisan pada lapisan tanah atas. Pada jumlah tertentu erosi merupakan hal yang wajar, namun kegiatan manusia memperburuk keadaan ini. Penggundulan hutan untuk dijadikan ladang atau perumahan misalnya, dapat memperkecil daya serap tanah terhadap air hujan. Akibatnya lapisan tanah atas terbawa dan akhirnya terjadi sedimentasi. Sedimentasi dapat berakhir di laut dan menghambat pertumbuhan terumbu karang. Sedimentasi menghambat pertumbuhan karang dengan cara menutup pori-pori tubuh dan membuat zooxanthellae kekurangan cahaya karena air yang keruh. Akibat kekurangan cahaya terus menerus dapat membuat siklus hidup karang terhenti. Karang sangat sensitif terhadap sedimen."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="3. Menangkap ikan tanpa merusak karang"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Terumbu karang berfungsi sebagai habitat yang baik untuk perkembangbiakan ikan. Tidak heran banyak nelayan yang menangkap ikan di daerah yang memiliki banyak karang. Beberapa nelayan yang tidak bertanggungjawab biasanya menggunakan bom ikan untuk mendapatkan ikan dengan mudah.
+                \n\nCara ini sangat merusak ekosistem terumbu karang. Bukan hanya ikan besar, tetapi terumbu karang beserta biota laut di dalamnya ikut mati. Oleh karena itu penggunaan bom ikan seharusnya dilarang. Selain merusak terumbu karang, nelayan juga dirugikan apabila jumlah ikan terus menerus menurun karena habitatnya rusak."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="4. Tidak mengambil karang dan terumbu karang"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Karang memang menjadi daya tarik utama saat bagi orang-orang yang memiliki hobi scuba diving. Beberapa mungkin tertarik untuk mengambilnya. Namun perlu diingat bahwa karang memiliki beberapa faktor pembatas yang meghalangi tumbuh kembangnya. Salah satunya adalah suhu dan salinitas. Saat karang diambil dari habitatnya dan dipindahkan ketempat yang tidak sesuai maka karang akan mati. Oleh karena itu perlu diberikan sosialisasi mendalam agar terumbu karang tetap dibiarkan sesuai habitatnya."
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/font_title"
+                android:text="5. Pengenalan karang dan terumbu karang sejak dini"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Melestarikan terumbu karang harus dimulai sejak kecil. Pengenalan terumbu karang penting dilakukan karena sebagian besar wilayah Indonesia adalah laut. Apabila sejak dini anak anak sudah dikenalkan dengan manfaat ekologi, khususnya terumbu karang, maka saat dia besar akan ada rasa kepemilikan untuk menjaga kelestarian terumbu karang."
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
