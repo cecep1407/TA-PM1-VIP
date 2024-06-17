@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.uti.coralsee.databinding.ActivityMainBinding
 import com.uti.coralsee.fragments.HomeFragment
 import com.uti.coralsee.fragments.InputLoginFragment
+import com.uti.coralsee.fragments.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +26,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imgprofile.setOnClickListener {
-            val sharedPreferences = getSharedPreferences("namauser", Context.MODE_PRIVATE)
-            val editor = sharedPreferences.edit()
-            editor.remove("logged_in_user")
-            editor.apply()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+            supportFragmentManager.beginTransaction().replace(R.id.frmContainer, ProfileFragment()).commit()
         }
     }}
