@@ -55,7 +55,14 @@ class ProfileFragment : Fragment() {
         binding.txtEmailProfile.text = Email
         binding.txtUsernameProfile.text = loggedInUser
 
-
+//        buat evet button logout
+        binding.btnLogout.setOnClickListener {
+            val editor = sharedPreferences.edit()
+            editor.remove("logged_in_user")
+            editor.apply()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.frm_containter_login, InputLoginFragment()).commit()
+        }
 
         return binding.root
     }
