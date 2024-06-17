@@ -207,16 +207,16 @@
                                 android:layout_width="300dp"
                                 android:layout_height="150dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/acropora_microphthalma" />
+                                android:src="@drawable/artikel1" />
 
                             <TextView
                                 android:id="@+id/textView45"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="TextView"
+                                android:text="5 Cara Melestarikan Terumbu Karang"
                                 android:layout_margin="10dp"
-                                android:textSize="18dp"
+                                android:textSize="14dp"
                                 android:fontFamily="@font/font_content"/>
 
                         </LinearLayout>
@@ -240,16 +240,16 @@
                                 android:layout_width="300dp"
                                 android:layout_height="150dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/acropora_microphthalma" />
+                                android:src="@drawable/artikel2" />
 
                             <TextView
                                 android:id="@+id/textView47"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="TextView"
+                                android:text="Budidaya Terumbu karang"
                                 android:layout_margin="10dp"
-                                android:textSize="18dp"
+                                android:textSize="14dp"
                                 android:fontFamily="@font/font_content"/>
 
                         </LinearLayout>
