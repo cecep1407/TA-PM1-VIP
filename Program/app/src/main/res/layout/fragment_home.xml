@@ -203,21 +203,21 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/imageView5"
+                                android:id="@+id/imageView7"
                                 android:layout_width="300dp"
                                 android:layout_height="150dp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/artikel1" />
 
                             <TextView
-                                android:id="@+id/textView45"
+                                android:id="@+id/textView48"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="5 Cara Melestarikan Terumbu Karang"
                                 android:layout_margin="10dp"
-                                android:textSize="14dp"
-                                android:fontFamily="@font/font_content"/>
+                                android:layout_weight="1"
+                                android:fontFamily="@font/font_content"
+                                android:text="Perlunya Melestarikan Terumbu Karang"
+                                android:textSize="14dp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -236,11 +236,44 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/imageView6"
+                                android:id="@+id/imageView5"
                                 android:layout_width="300dp"
                                 android:layout_height="150dp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/artikel2" />
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="5 Cara Melestarikan Terumbu Karang"
+                                android:layout_margin="10dp"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/font_content"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/artikel3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="300dp"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/artikel3" />
 
                             <TextView
                                 android:id="@+id/textView47"

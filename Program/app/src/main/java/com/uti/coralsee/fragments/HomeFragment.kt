@@ -7,8 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.addCallback
-import androidx.compose.animation.slideIn
-import androidx.fragment.app.FragmentTransaction
 import com.uti.coralsee.MainActivity
 import com.uti.coralsee.R
 import com.uti.coralsee.config.Lite
@@ -108,6 +106,15 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel2Fragment()).commit()
                 (activity as MainActivity).hideNavigationBar()
+        }
+
+        binding.artikel3.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right,
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel3Fragment()).commit()
+            (activity as MainActivity).hideNavigationBar()
         }
         // Set listener untuk tombol back
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
