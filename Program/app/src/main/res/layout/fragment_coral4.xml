@@ -159,6 +159,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
                 android:text="Dalam Daftar Merah Spesies Terancam Punah IUCN , karang bintang muda yang masif terdaftar sebagai spesies yang sangat terancam punah. Pulau ini cukup rentan terhadap pemutihan karang namun mampu pulih ketika kondisinya membaik."
                 android:textSize="14dp" />
         </LinearLayout>

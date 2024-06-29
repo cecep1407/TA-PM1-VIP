@@ -149,6 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
                 android:text="Ada banyak metode yang dapat diaplikasikan untuk proses transplantasi karang, diantaranya metode rak, metode jaring, metode substrat, dan metode beton. Berbagai metode ini dapat digunakan sesuai dengan kondisi lokasi terumbu karang. Adapun beberapa keunggulan dari metode-metode tersebut, diantaranya :
 \n\n -Metode rak, jaring, dan substrat banyak digunakan untuk budidaya karang hias. Metode ini banyak digunakan karena memudahkan secara operasional.
 \n -Metode beton lebih direkomendasikan untuk budidaya karang dengan tujuan untuk merehabilititasi terumbu karang yang rusak.
