@@ -15,15 +15,15 @@
 
         <TextView
             android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/font_header"
             android:text="Artikel 1"
             android:textColor="@color/white"
-            android:textSize="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="24dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
@@ -34,117 +34,105 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="16dp">
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txt_judul_artikel1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="2dp"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/font_title"
-                android:text="5 Cara Melestarikan Terumbu Karang"
-                android:textSize="24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:text="Perlunya Melestarikan Terumbu Karang"
+                android:textSize="24dp" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/artikel1" />
 
             <TextView
-                android:id="@+id/textView43"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/font_title"
-                android:text="1. Menjaga kebersihan sungai dan pesisir pantai"
-                android:textSize="18dp" />
-
-            <TextView
-                android:id="@+id/textView44"
+                android:id="@+id/textView64"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Keberadaan aliran sungai dan laut penting dalam proses siklus air. Fungsi sungai antara lain sebagai sarana dalam transportasi. Bukan hanya sarana transportasi, sungai juga dijadikan sebagai tempat mandi, mencuci, bahkan untuk membuang limbah keluarga/pabrik. limbah pabrik biasanya mengandung bayak logam berbahaya. bahaya logam berat bagi lingkungan sangat besar sehingga perlu diawasi lebih ketat karena limbah sampah dan pabrik yang dibuang kesungai pada akhirnya akan bermuara di laut.
-                \n\nSama halnya seperti membuang sampah di pantai. Sampah yang berceceran di sungai, seperti sampah plastik, akhirnya akan tersapu ombak dan merusak terumbu karang. Dampak sampah plastik pada terumbu karang utamanya menjadi penghalang cahaya matahari. Terumbu karang membutuhkan cahaya dengan intensitas tertentu agar dapat berkembang optimal. Cahaya matahari dibutuhkan untuk melangsungkan proses fotosintesis yang dilakukan oleh zooxantellae yang ada di jaringan karang. Sampah yang dibuang ke laut akan menghambat proses ini. Sampah plastik misalnya, dapat menutupi karang sehingga zooxantellae tidak mendapat intensitas optimal untuk fotosintesisnya. Apabila keadaan ini terus menerus terjadi, maka karang akan mati."
+                android:text="Terumbu karang adalah ekosistem penting di lautan yang keberadaannya terancam karena berbagai hal termasuk perubahan iklim. Tahukah kamu, mengapa terumbu karang perlu dilestarikan?"
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView45"
+                android:id="@+id/textView65"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/font_title"
-                android:text="2. Mencegah terjadinya erosi"
+                android:text="1. Habitat Organisme Laut"
                 android:textSize="18dp" />
 
             <TextView
-                android:id="@+id/textView46"
+                android:id="@+id/textView66"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Erosi merupakan proses pengikisan pada lapisan tanah atas. Pada jumlah tertentu erosi merupakan hal yang wajar, namun kegiatan manusia memperburuk keadaan ini. Penggundulan hutan untuk dijadikan ladang atau perumahan misalnya, dapat memperkecil daya serap tanah terhadap air hujan. Akibatnya lapisan tanah atas terbawa dan akhirnya terjadi sedimentasi. Sedimentasi dapat berakhir di laut dan menghambat pertumbuhan terumbu karang. Sedimentasi menghambat pertumbuhan karang dengan cara menutup pori-pori tubuh dan membuat zooxanthellae kekurangan cahaya karena air yang keruh. Akibat kekurangan cahaya terus menerus dapat membuat siklus hidup karang terhenti. Karang sangat sensitif terhadap sedimen."
+                android:text="Terumbu karang perlu dilestarikan karena merupakan habitat atau rumah bagi ikan. Dilansir dari National Oceanic and Atmospheric Administration, sekitar 25 persen ikan laut bergantung pada terumbu karang yang sehat untuk berlindung, mencari makan, bereproduksi, dan membesarkan anak mereka. Tidak hanya ikan, terumbu karang juga merupakan habitat bagi banyak organisme laut seperti alga, kerang, kepiting, udang, bintang laut, bulu babi, teripang, dan masih banyak lagi."
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView47"
+                android:id="@+id/textView67"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/font_title"
-                android:text="3. Menangkap ikan tanpa merusak karang"
+                android:text="2. Menyediakan Bahan Pangan"
                 android:textSize="18dp" />
 
             <TextView
-                android:id="@+id/textView48"
+                android:id="@+id/textView68"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Terumbu karang berfungsi sebagai habitat yang baik untuk perkembangbiakan ikan. Tidak heran banyak nelayan yang menangkap ikan di daerah yang memiliki banyak karang. Beberapa nelayan yang tidak bertanggungjawab biasanya menggunakan bom ikan untuk mendapatkan ikan dengan mudah.
-                \n\nCara ini sangat merusak ekosistem terumbu karang. Bukan hanya ikan besar, tetapi terumbu karang beserta biota laut di dalamnya ikut mati. Oleh karena itu penggunaan bom ikan seharusnya dilarang. Selain merusak terumbu karang, nelayan juga dirugikan apabila jumlah ikan terus menerus menurun karena habitatnya rusak."
+                android:text="Dilansir dari Wildcoast, terumbu karang berperan penting dalam menyediakan makanan bagi lebih dari 500 juta orang yang tinggal di atau dekat pantai. Hal tersebut karena terumbu karang merupakan habitat berbagai organisme laut yang dijadikan bahan pangan seperti ikan, gurita, kepiting, dan lain sebagainya. Hilangnya terumbu karang akan membuat organisme laut kehilangan rumah dan terancam punah, sehingga bahan pangan hasil laut sulit didapat."
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView49"
+                android:id="@+id/textView69"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/font_title"
-                android:text="4. Tidak mengambil karang dan terumbu karang"
+                android:text="3. Menyediakan Mata Pencaharian"
                 android:textSize="18dp" />
 
             <TextView
-                android:id="@+id/textView50"
+                android:id="@+id/textView70"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Karang memang menjadi daya tarik utama saat bagi orang-orang yang memiliki hobi scuba diving. Beberapa mungkin tertarik untuk mengambilnya. Namun perlu diingat bahwa karang memiliki beberapa faktor pembatas yang meghalangi tumbuh kembangnya. Salah satunya adalah suhu dan salinitas. Saat karang diambil dari habitatnya dan dipindahkan ketempat yang tidak sesuai maka karang akan mati. Oleh karena itu perlu diberikan sosialisasi mendalam agar terumbu karang tetap dibiarkan sesuai habitatnya."
+                android:text="Terumbu karang perlu dilestarikan karena menyediakan mata pencaharian. Mata pencaharian tersebut berupa penangkapan ikan dan hasil laut juga rekreasi dan pariwisata. Keindahan terumbu karang dan keanekaragaman hayati di dalamnya menarik banyak wisatawan, sehingga dapat menghidupkan sektor rekreasi dan pariwisata daerah setempat."
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView51"
+                android:id="@+id/textView71"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/font_title"
-                android:text="5. Pengenalan karang dan terumbu karang sejak dini"
+                android:text="4. Menyediakan Obat-Obatan"
                 android:textSize="18dp" />
 
             <TextView
-                android:id="@+id/textView52"
+                android:id="@+id/textView72"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:paddingBottom="10dp"
-                android:text="Melestarikan terumbu karang harus dimulai sejak kecil. Pengenalan terumbu karang penting dilakukan karena sebagian besar wilayah Indonesia adalah laut. Apabila sejak dini anak anak sudah dikenalkan dengan manfaat ekologi, khususnya terumbu karang, maka saat dia besar akan ada rasa kepemilikan untuk menjaga kelestarian terumbu karang."
+                android:text="Selain menyediakan bahan pangan bagi manusia, terumbu karang juga menyediakan berbagai jenis obat. Hal tersebut karena terumbu karang menyediakan tempat hidup bagi berbgai jenis hewan dan tumbuhan yang dapat digunakan sebagai bahan pembuatan obat-obatan. Misalnya, obat asma, penyakit jantung, radang sendi, hingga pengobatan tumor dan kanker."
                 android:textSize="14dp" />
         </LinearLayout>
     </ScrollView>
-
 </FrameLayout>
