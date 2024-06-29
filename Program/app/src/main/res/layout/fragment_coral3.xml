@@ -159,6 +159,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
                 android:text="Ia digolongkan sebagai spesies Hampir Terancam dalam Daftar Merah IUCN dan diyakini populasinya menurun; spesies ini juga terdaftar dalam Appendix II CITES. Jumlah populasinya tidak diketahui, namun kemungkinan besar terancam oleh berkurangnya terumbu karang secara global, peningkatan suhu yang menyebabkan pemutihan karang, perubahan iklim, aktivitas manusia, bintang laut berduri ( Acanthaster planci ) dan penyakit. [1] Terjadi di Teluk Aden, Laut Merah, Samudra Hindia bagian utara dan barat daya, Australia, Indo-Pasifik tengah, Jepang, Asia Tenggara, Laut Cina Timur, Samudra Pasifik tengah dan barat, Atol Johnston dan Kepulauan Hawaii barat laut. Ia terdapat di Kepulauan Raja Ampat, Kepulauan Mariana, Palau, dan Kepulauan Pitcairn."
                 android:textSize="14dp" />
         </LinearLayout>

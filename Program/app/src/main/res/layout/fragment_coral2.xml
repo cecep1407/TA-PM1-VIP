@@ -159,6 +159,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
                 android:text="Karang ini merupakan spesies umum dan tidak ada ancaman spesifik spesies yang teridentifikasi. Ancaman utama yang dihadapi karang secara umum berkaitan dengan perubahan iklim dan perusakan mekanis terhadap habitat terumbu karang; meningkatnya kerusakan akibat peristiwa cuaca ekstrem, kenaikan suhu air laut, dan pengasaman laut . Persatuan Internasional untuk Konservasi Alam telah menilai status konservasi spesies ini sebagai 'hampir terancam'."
                 android:textSize="14dp" />
         </LinearLayout>

@@ -141,6 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
                 android:text="Melestarikan terumbu karang harus dimulai sejak kecil. Pengenalan terumbu karang penting dilakukan karena sebagian besar wilayah Indonesia adalah laut. Apabila sejak dini anak anak sudah dikenalkan dengan manfaat ekologi, khususnya terumbu karang, maka saat dia besar akan ada rasa kepemilikan untuk menjaga kelestarian terumbu karang."
                 android:textSize="14dp" />
         </LinearLayout>
