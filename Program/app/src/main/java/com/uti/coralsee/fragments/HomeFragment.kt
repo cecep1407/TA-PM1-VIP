@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.activity.addCallback
 import androidx.compose.animation.slideIn
 import androidx.fragment.app.FragmentTransaction
+import com.uti.coralsee.MainActivity
 import com.uti.coralsee.R
 import com.uti.coralsee.config.Lite
 import com.uti.coralsee.databinding.FragmentHomeBinding
@@ -63,6 +64,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral1Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
         binding.cardCoral2.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
@@ -70,6 +72,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral2Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
         binding.cardCoral3.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
@@ -77,6 +80,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral3Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
         binding.cardCoral4.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction().setCustomAnimations(
@@ -84,6 +88,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Coral4Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
 
 //        Buat Event Untuk Artikel
@@ -93,6 +98,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel1Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
 
         binding.artikel2.setOnClickListener{
@@ -101,6 +107,7 @@ class HomeFragment : Fragment() {
                 android.R.anim.slide_out_right,
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right).addToBackStack(null).replace(R.id.frmContainer, Artikel2Fragment()).commit()
+                (activity as MainActivity).hideNavigationBar()
         }
         // Set listener untuk tombol back
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
@@ -108,6 +115,11 @@ class HomeFragment : Fragment() {
             requireActivity().finishAffinity()
         }
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).showNavigationBar()
     }
 
     companion object {
